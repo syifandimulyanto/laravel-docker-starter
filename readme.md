@@ -19,3 +19,18 @@ After follow the step by step, the project already running in [http://localhost]
 ##### Refrence Create Docker Configuration
 
 - https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
+
+## Passport Installing
+
+Laravel passport reference [https://laravel.com/docs/5.8/passport]
+
+- docker-compose exec app composer require laravel/passport
+
+To custom migration file :
+- docker-compose exec app php artisan vendor:publish --tag=passport-migrations
+
+- docker-compose exec app php artisan migrate
+- docker-compose exec app php artisan passport:install
+
+Passport Using client password
+- docker-compose exec app php artisan passport:client --password
