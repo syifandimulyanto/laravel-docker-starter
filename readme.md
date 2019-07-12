@@ -16,6 +16,12 @@ we don't need to work hard, to do the initial configuration
 
 After follow the step by step, the project already running in [http://localhost]()
 
+#### Testing
+
+```bash
+$ docker-compose exec app vendor/bin/phpunit
+```
+
 ##### Refrence Create Docker Configuration
 
 - https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
